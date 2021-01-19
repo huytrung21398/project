@@ -63,6 +63,19 @@ class NumberTwo extends Component{
     );
   }
 }
+// Ví dụ về hàm map
+const so = [1,2,3,4,5,6];
+const so2 = so.map((x)=> x*2);
+
+class NumberThree extends Component{
+  render(){
+    return(
+      <div>
+      {so2}
+      </div>
+    )
+  }
+}
 
 class  App extends Component {
   render(){
@@ -70,13 +83,15 @@ class  App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-
+          <NumberThree/>
         </header>
+
       <div className="container">
       <div className="row">
         <NumberOne tieude="Cocacola" text="cocacola nhập khẩu từ nhật" linkanh="https://kidsplaza-1.cdn.vccloud.vn/media/wysiwyg/product/be-an-be-uong/nuoc-ngot-co-ga-cocacola-nhat-300ml-1.JPG"/>
         <NumberOne tieude="Pepsi" text="pepsi apple pie" linkanh="https://www.gannett-cdn.com/presto/2020/11/17/USAT/f771651c-39db-4fdd-9eee-5a082fc51b2e-Pepsi_Apple_Pie_KV.jpg"/>
         <NumberTwo tieude="Sting" linkanh="https://iwater.vn/Image/Picture/Nuoc_ngot/sting%20chai%20330ml.png"/>
+
       </div>
       </div>
       </div>
